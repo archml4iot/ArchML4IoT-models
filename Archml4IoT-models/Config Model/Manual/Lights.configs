@@ -1,0 +1,28 @@
+component sensor PIRSensor PIR1 {
+	digital input pin motion : 1
+}
+
+component sensor PIRSensor PIR2 {
+	digital input pin motion : 2
+}
+
+component sensor PIRSensor PIR3 {
+	digital input pin motion : 3
+}
+
+component actuator Light LGT1 {
+	digital output pin light : 4
+}
+
+component actuator Light LGT2 {
+	digital output pin light : 5
+}
+
+component actuator Light LGT3 {
+	digital output pin light : 6
+}
+
+component sensor CurrentSensor INA226_03 {
+	analog input pin sda : 7,
+	analog input pin scl : 8
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archML4IoT:ArchML4IoT xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archML4IoT="http://www.example.org/archML4IoT">
+  <system physical_entity="//@physical_entity.0" virtual_entity="//@virtual_entity.0" name="Garage Door"/>
+  <physical_entity controller="//@controller.0" name="Physical Entity"/>
+  <virtual_entity resource="//@resource.0 //@resource.1" system_hub="//@system_hub.0" name="Virtual Entity"/>
+  <resource xsi:type="archML4IoT:On_Device_Resource" name="Local Resource"/>
+  <resource xsi:type="archML4IoT:Environment_Data" name="Firebase" computing="Cloud" environment_data="//@resource.1" tag="//@device.2" sensor="//@device.1" env_name="Virtual Env"/>
+  <system_hub user_interface="//@user_interface.0 //@user_interface.1" name="Server" access="//@resource.0 //@resource.1"/>
+  <controller xsi:type="archML4IoT:Logic_Unit" logic_unit="//@controller.0" network_device="//@network_device.0" store="//@resource.0" device="//@device.0 //@device.1 //@device.2" name="Controller"/>
+  <user_interface xsi:type="archML4IoT:Dashboard" name="Dashboard"/>
+  <user_interface xsi:type="archML4IoT:Mobile_App" name="App"/>
+  <network_device cloud_database="//@resource.1" name="WiFi Adapter"/>
+  <device xsi:type="archML4IoT:Actuator" name="Actuator" type="Motor"/>
+  <device xsi:type="archML4IoT:Sensor" name="Ultrasonic Sensor" type="Ultrasonic_Sensor"/>
+  <device xsi:type="archML4IoT:Tag" name="Tag" type="NFC"/>
+  <arch_frame name="Edge Layer and Devices"/>
+  <arch_frame name="Cloud Layer"/>
+</archML4IoT:ArchML4IoT>

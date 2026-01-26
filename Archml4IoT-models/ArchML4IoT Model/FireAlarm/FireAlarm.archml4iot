@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archML4IoT:ArchML4IoT xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archML4IoT="http://www.example.org/archML4IoT">
+  <system physical_entity="//@physical_entity.0" virtual_entity="//@virtual_entity.0" name="Fire Alarm System"/>
+  <physical_entity controller="//@controller.0" name="Physical Entity"/>
+  <virtual_entity resource="//@resource.1 //@resource.0" system_hub="//@system_hub.0" name="Virtual Entity"/>
+  <resource xsi:type="archML4IoT:Environment_Data" name="Firebase" computing="Cloud" environment_data="//@resource.0" sensor="//@device.2 //@device.1 //@device.0" env_name="Virtual Env"/>
+  <resource xsi:type="archML4IoT:On_Device_Resource" name="Local Resource"/>
+  <system_hub user_interface="//@user_interface.1 //@user_interface.0" name="Backend"/>
+  <controller xsi:type="archML4IoT:Logic_Unit" logic_unit="//@controller.0" network_device="//@network_device.0" store="//@resource.1" device="//@device.0 //@device.1 //@device.2 //@device.3" name="Controller" core="Fire_Alarm"/>
+  <user_interface xsi:type="archML4IoT:Dashboard" name="Dashboard"/>
+  <user_interface xsi:type="archML4IoT:Mobile_App" name="App"/>
+  <network_device cloud_database="//@resource.0" name="WiFi"/>
+  <device xsi:type="archML4IoT:Sensor" name="Smoke Sensor" type="Gas_Sensor"/>
+  <device xsi:type="archML4IoT:Sensor" name="Thermo Sensor" type="Thermometer"/>
+  <device xsi:type="archML4IoT:Sensor" name="Flame Sensor"/>
+  <device xsi:type="archML4IoT:Actuator" name="Buzzer" type="Buzzer"/>
+  <arch_frame name="Edge Layer and Devices"/>
+  <arch_frame name="Cloud Layer"/>
+</archML4IoT:ArchML4IoT>

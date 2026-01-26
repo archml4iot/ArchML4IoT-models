@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archML4IoT:ArchML4IoT xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archML4IoT="http://www.example.org/archML4IoT">
+  <system name="System"/>
+  <system physical_entity="//@physical_entity.1" virtual_entity="//@virtual_entity.1" name="Smart Farm System"/>
+  <system physical_entity="//@physical_entity.2" virtual_entity="//@virtual_entity.3" port="//@port.2 //@port.7 //@port.13 //@port.14 //@port.12 //@port.15" name="Smart Home System" type="Composite_System"/>
+  <system port="//@port.4 //@port.3" name="Garage Door"/>
+  <system port="//@port.6 //@port.5" name="Fire Alarm"/>
+  <system virtual_entity="//@virtual_entity.4" port="//@port.9 //@port.8 //@port.21 //@port.18 //@port.20 //@port.19" name="Smart Light Hub"/>
+  <system port="//@port.16 //@port.10" name="Smart Light 1"/>
+  <system port="//@port.17 //@port.11" name="Smart Light 2"/>
+  <physical_entity name="Physical Entity"/>
+  <physical_entity controller="//@controller.1 //@controller.2" name="Physical Entity"/>
+  <physical_entity controller="//@controller.4" name="Physical Entity"/>
+  <virtual_entity name="Virtual Entity"/>
+  <virtual_entity resource="//@resource.3 //@resource.2 //@resource.4" name="Virtual Entity"/>
+  <virtual_entity resource="//@resource.5" name="Virtual Entity"/>
+  <virtual_entity resource="//@resource.7" system_hub="//@system_hub.1" name="Virtual Entity"/>
+  <virtual_entity system_hub="//@system_hub.2" name="Virtual Entity"/>
+  <resource xsi:type="archML4IoT:On_Device_Resource" name="On Device Resource"/>
+  <resource xsi:type="archML4IoT:Environment_Data" name="Database" computing="Cloud" env_name="Virtual Env"/>
+  <resource xsi:type="archML4IoT:On_Device_Resource" name="Plant Info"/>
+  <resource xsi:type="archML4IoT:On_Device_Resource" name="Farm Field Info"/>
+  <resource xsi:type="archML4IoT:Cloud_Database" name="Database" computing="Cloud"/>
+  <resource xsi:type="archML4IoT:On_Device_Resource" name="On Device Reources"/>
+  <resource xsi:type="archML4IoT:Environment_Data" name="Database" computing="Cloud" sensor="//@device.6" env_name="Virtual Env"/>
+  <resource xsi:type="archML4IoT:Cloud_Database" name="Database" computing="Cloud"/>
+  <system_hub name="System Hub"/>
+  <system_hub user_interface="//@user_interface.2 //@user_interface.3" include="//@system_hub.2" name="Smart Home Hub" access="//@resource.7"/>
+  <system_hub name="Smart Light Hub"/>
+  <controller xsi:type="archML4IoT:Logic_Unit" name="Controller"/>
+  <controller xsi:type="archML4IoT:Logic_Unit" logic_unit="//@controller.1" network_device="//@network_device.2" store="//@resource.2" device="//@device.4 //@device.3" name="Plant Controller" core="Logic_Unit"/>
+  <controller xsi:type="archML4IoT:Logic_Unit" logic_unit="//@controller.2" network_device="//@network_device.1" store="//@resource.3" name="Farm Field Controller" computing="Fog" core="Logic_Unit"/>
+  <controller xsi:type="archML4IoT:Logic_Unit" device="//@device.5" name="Controller"/>
+  <controller xsi:type="archML4IoT:Logic_Unit" logic_unit="//@controller.4" name="Controller" core="Logic_Unit"/>
+  <port xsi:type="archML4IoT:Output" name="Output Port"/>
+  <port xsi:type="archML4IoT:Input" name="Input Port"/>
+  <port xsi:type="archML4IoT:Output" name="" interface="//@port.3" message="Garage Door Switch"/>
+  <port xsi:type="archML4IoT:Input" name=""/>
+  <port xsi:type="archML4IoT:Output" name="" interface="//@port.13" message="Garage Door Status"/>
+  <port xsi:type="archML4IoT:Input" name=""/>
+  <port xsi:type="archML4IoT:Output" name="" interface="//@port.14" message="Fire Alarm Status" network="Bluetooth"/>
+  <port xsi:type="archML4IoT:Output" name="" interface="//@port.5" message="Fire Alarm Switch" network="Bluetooth"/>
+  <port xsi:type="archML4IoT:Output" name="" interface="//@port.15" message="Light Hub Status" network="ZigBee"/>
+  <port xsi:type="archML4IoT:Input" name=""/>
+  <port xsi:type="archML4IoT:Input" name=""/>
+  <port xsi:type="archML4IoT:Input" name=""/>
+  <port xsi:type="archML4IoT:Output" name="" interface="//@port.9" message="Light Hub Switch" network="ZigBee"/>
+  <port xsi:type="archML4IoT:Input" name=""/>
+  <port xsi:type="archML4IoT:Input" name=""/>
+  <port xsi:type="archML4IoT:Input" name=""/>
+  <port xsi:type="archML4IoT:Output" name="" interface="//@port.18" message="Light 1 Status" network="ZigBee"/>
+  <port xsi:type="archML4IoT:Output" name="" interface="//@port.19" message="Light 2 Status" network="ZigBee"/>
+  <port xsi:type="archML4IoT:Input" name=""/>
+  <port xsi:type="archML4IoT:Input" name=""/>
+  <port xsi:type="archML4IoT:Output" name="" interface="//@port.11" message="Light 2 Switch" network="ZigBee"/>
+  <port xsi:type="archML4IoT:Output" name="" interface="//@port.10" message="Light 1 Switch" network="ZigBee"/>
+  <user_interface xsi:type="archML4IoT:Dashboard" name="Dashboard"/>
+  <user_interface xsi:type="archML4IoT:Mobile_App" name="App"/>
+  <user_interface xsi:type="archML4IoT:Dashboard" name="Dashboard"/>
+  <user_interface xsi:type="archML4IoT:Mobile_App" name="App"/>
+  <network_device name="Network Device"/>
+  <network_device cloud_database="//@resource.4" name="WiFi Adapters" computing="Fog"/>
+  <network_device name="WiFi Component" network_device="//@network_device.1"/>
+  <network_device cloud_database="//@resource.6" name="WiFi"/>
+  <device xsi:type="archML4IoT:Actuator" name="Actuator"/>
+  <device xsi:type="archML4IoT:Sensor" name="Sensor"/>
+  <device xsi:type="archML4IoT:Tag" name="Tag"/>
+  <device xsi:type="archML4IoT:Sensor" name="General Sensor" type="Thermometer"/>
+  <device xsi:type="archML4IoT:Actuator" name="General Actuator"/>
+  <device xsi:type="archML4IoT:Sensor" name="Sensor"/>
+  <device xsi:type="archML4IoT:Sensor" name="Sensor"/>
+  <arch_frame name="Frame"/>
+  <arch_frame name="Edge Layer and Devices"/>
+  <arch_frame name="Cloud Layer"/>
+  <arch_frame name="Fog Layer"/>
+  <arch_frame name="Smart Home System"/>
+  <arch_frame name="Garage Door System"/>
+  <arch_frame name="Smart Light System"/>
+  <arch_frame name="Smart Light System"/>
+  <arch_frame name="Frame"/>
+  <arch_frame name="Cloud Layer"/>
+  <arch_frame name="Fog Layer"/>
+  <arch_frame name="Edge Layer and Devices"/>
+</archML4IoT:ArchML4IoT>

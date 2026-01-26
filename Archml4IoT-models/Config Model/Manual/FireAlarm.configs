@@ -1,0 +1,24 @@
+component sensor GasSensor MQ6_01 {
+	analog input pin gas : 1
+}
+
+component sensor FlameSensor FLM01 {
+	digital input pin flame : 2
+}
+
+component actuator Buzzer BZR01 {
+	digital output pin buzzer : 3
+}
+
+component sensor ResetButton RST01 {
+	digital input pin reset : 4
+}
+
+component actuator WhiteLight LED02 {
+	digital output pin light : 5
+}
+
+component sensor CurrentSensor INA226_02 {
+	analog input pin sda : 6,
+	analog input pin scl : 7
+}

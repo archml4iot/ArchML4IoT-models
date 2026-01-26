@@ -1,0 +1,25 @@
+component sensor UltrasonicSensor US01 {
+	digital output pin trig : 1,
+	digital input pin echo : 2
+}
+
+component sensor DoorButton BTN01 {
+	digital input pin button : 3
+}
+
+component actuator BlueLight LED01 {
+	digital output pin light : 4
+}
+
+component sensor PIRSensor PIR01 {
+	digital input pin motion : 5
+}
+
+component actuator GarageServo SER01 {
+	analog output pin servo : 6
+}
+
+component sensor CurrentSensor INA226_01 {
+	analog input pin sda : 7,
+	analog input pin scl : 8
+}
