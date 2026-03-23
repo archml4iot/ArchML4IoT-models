@@ -9,6 +9,7 @@ The repository provides three categories of models derived from our ArchML4IoT-b
 - **Architecture models** created in ArchML4IoT for smart home systems
 - **Configuration models** generated from the architecture models
 - **Statechart models** generated from the architecture models for STL4IoT
+- **Figures** attached to the paper.
 
 In addition to the generated models, this repository also includes manually created versions of the configuration and statechart models for evaluation and comparison.
 
@@ -28,6 +29,9 @@ It also includes manually created configuration models that are used for evaluat
 This folder contains all statechart models generated from the architecture models.
 
 It also includes manually created statechart models that are used for evaluation and comparison against the generated results.
+
+### `Figures`
+This folder contains figures in the paper. In case the figures are not clear enough for the reader.
 
 ## Purpose
 
