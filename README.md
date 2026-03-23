@@ -46,3 +46,9 @@ This repository is intended to:
 - The models in this repository are focused on **smart home system** examples.
 - The generated models are organized together with manually created baseline models for evaluation purposes.
 - The ArchML4IoT modelling editor and transformation scripts are maintained separately.
+
+## Require Tools
+
+- Eclipse Modeling Tools - 2023-06
+- Eclipse Sirius - releases/7.4.11/2023-03
+- itemis CREATE - version 5.2.2
