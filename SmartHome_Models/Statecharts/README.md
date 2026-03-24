@@ -18,6 +18,7 @@ This figure shows the **inline definition** section of the **Garage Door System*
 It defines the internal elements required by the system, such as interfaces, events, variables, and component instances, which support communication and coordination among the statecharts in the model.
 
 ---
+
 ![System Statechart](./Statechart%20-%20system%20-%20statechart.PNG)
 ![System Statechart 2](./Statechart%20-%20system%20-%20statechart%202.PNG)
 
@@ -25,6 +26,7 @@ These figures presents the main system-level statechart of the **Garage Door Sys
 It captures the overall system behavior and coordinates the interaction among the internal components that realize the garage door logic.
 
 ---
+
 ![Garage Door Logic Unit](./Statechart%20-%20garage%20door.PNG)
 
 This figure shows the **Garage Door Logic Unit** statechart. It represents the behavior of the garage door core logic.
