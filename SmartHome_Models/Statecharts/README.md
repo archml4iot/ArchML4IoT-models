@@ -12,8 +12,15 @@ This folder contains the manually created statechart models used as reference mo
 
 ## Example: Garage Door System
 
-![Hub Template Statechart](./Statechart%20-%20system%20-%20inline%20definition%20section.PNG.PNG)
+![Inline Definition Section](./Statechart%20-%20system%20-%20inline%20definition%20section.PNG)
+This figure shows the inline definition section of the Garage Door System statechart model. 
+It defines the internal elements required by the system, such as interfaces, events, variables, and component instances, which support communication and coordination among the statecharts in the model.
 
-The **hub template statechart** illustrates the structural foundation provided for the smart home hub in the STL4IoT model set. Since the hub is responsible for coordinating multiple subsystems, its behavior is more complex and less predictable than that of individual smart home components. For this reason, the generated hub model is provided as a reusable template rather than as a fully completed behavioral design.
+![System Statechart](./Statechart%20-%20system%20-%20statechart.PNG)
+![System Statechart 2](./Statechart%20-%20system%20-%20statechart%202.PNG)
+These figures presents the main system-level statechart of the Garage Door model. 
+It captures the overall system behavior and coordinates the interaction among the internal components that realize the garage door logic.
 
-The diagram shows the key regions and states that form the skeleton of the hub logic. These elements provide an initial behavioral structure that supports later refinement, allowing developers to adapt the hub model to the coordination needs of a specific smart home system. In this way, the generated hub template helps reduce the effort required to bootstrap statechart development while still preserving a consistent structure derived from the architecture model.
+![Garage Door Logic Unit](./Statechart%20-%20garage%20door.PNG)
+This figure shows the Garage Door Logic Unit statechart. It represents the behavior of the garage door core logic.
+Combined with the system-level statecharts, it contributes to the complete multi-state machine model of the Garage Door system.
