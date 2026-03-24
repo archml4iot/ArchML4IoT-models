@@ -37,5 +37,4 @@ It captures the overall system behavior and coordinates the interaction among th
 
 This figure shows the **Garage Door Logic Unit** statechart. It represents the behavior of the garage door core logic.
 Combined with the system-level statecharts, it contributes to the complete multi-state machine model of the Garage Door system.
-
 ---
