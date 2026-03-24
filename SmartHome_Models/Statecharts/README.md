@@ -1,6 +1,6 @@
-# STL4IoT
+# Multi-state Machines
 
-This folder contains the STL4IoT statechart models used in our study. It includes both the generated statechart models derived from the architecture models and the manually created statechart models used for evaluation and comparison.
+This folder contains the smart home statechart models used in our study. It includes both the generated statechart models derived from the architecture models and the manually created statechart models used for evaluation and comparison.
 
 ## Folder Structure
 
@@ -10,9 +10,9 @@ This folder contains the statechart models automatically generated from the Arch
 ### `Manual`
 This folder contains the manually created statechart models used as reference models for evaluation and comparison.
 
-## Example: Hub Template Statechart
+## Example: Garage Door System
 
-![Hub Template Statechart](./Statechart%20-%20hub%20template.PNG)
+![Hub Template Statechart](./Statechart%20-%20system%20-%20inline%20definition%20section.PNG.PNG)
 
 The **hub template statechart** illustrates the structural foundation provided for the smart home hub in the STL4IoT model set. Since the hub is responsible for coordinating multiple subsystems, its behavior is more complex and less predictable than that of individual smart home components. For this reason, the generated hub model is provided as a reusable template rather than as a fully completed behavioral design.
 
