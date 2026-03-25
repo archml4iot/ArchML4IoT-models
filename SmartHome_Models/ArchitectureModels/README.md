@@ -1,8 +1,6 @@
-# ArchML4IoT Model
+# ArchML4IoT Models
 
 This folder contains the architecture models created in ArchML4IoT for the smart home systems used in our study. These models represent the system structure at the architecture level and serve as the source models for downstream generation, including configuration models and STL4IoT statechart models.
-
-## Included Models
 
 This folder currently includes architecture models for:
 
@@ -12,6 +10,10 @@ This folder currently includes architecture models for:
 - Smart Light
 
 Each model captures the main structural elements of the system, such as subsystems, devices, controllers, resources, ports, and communication relationships.
+
+## ArchML4IoT modelling environment featuring a sample model of a smart farm system.
+
+![Smart Home Hub](./Smart%20Home%20Hub.PNG)
 
 ## Example: Smart Home Hub
 
